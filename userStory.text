@@ -1,0 +1,30 @@
+
+step one: an option to start game appears
+step two: after starting prompt for name appears
+step three: character shows up
+ --character appears with health bar, Age, sleepiness boredom, hunger by this point--
+ all bars should start fat zero
+step four: buttons are located to have options of feeding, turn lights off and play
+
+step five: if user presses feed 
+the a +1 to the bar unless the bar is full
+
+step five: if user presses turn lights off:
+tamagotchi sleeps +1 for an amount of time the lights are off
+
+step five: if user presses play:
+plus 1 to boredom
+
+step six:
+after some Time the tamagotchi has increased by 1 in boredom, hunger, and sleepiness
+after some time the tamagotchis age increaseses by a certain amount of time
+ 
+step seven: if user chooses to not do one of the following: feed, play, put tama to sleep
+once a bar hits 0 on either of the above:
+the game ends 
+game screen can show game over for a few moments with an option to restart
+
+step eight: 
+if pet reaches certain old age 
+Players screen get congrats you won! 
+option to restart
