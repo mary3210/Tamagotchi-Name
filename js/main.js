@@ -8,7 +8,7 @@ let tamagotchi =  {
 petName, 
 age: 0,
 hunger: 3,
-bordedom: 0,
+boredom: 3,
 sleepiness:0,
 }
 console.log(tamagotchi)
@@ -18,7 +18,7 @@ age.innerHTML = `Age: ${tamagotchi.age}`
 let hunger = document.querySelector("#hunger")
 hunger.innerHTML = `Hunger: ${tamagotchi.hunger}`
 let boredom = document.querySelector("#boredom")
-boredom.innerHTML = `Bordeom: ${tamagotchi.bordedom}`
+boredom.innerHTML = `Boredom: ${tamagotchi.boredom}`
 let sleepiness = document.querySelector("#sleepiness")
 sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
 
@@ -41,5 +41,9 @@ function retrieveName(){
       hunger.innerHTML = `Hunger: ${tamagotchi.hunger}`
       
     }
-    
+    else if(btn ==="play" && tamagotchi.boredom <10 && tamagotchi.boredom >0){
+      tamagotchi.boredom = tamagotchi.boredom -1
+      boredom.innerHTML = `Boredom: ${tamagotchi.boredom}`
+    }
+  
   }
