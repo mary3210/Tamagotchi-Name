@@ -1,17 +1,24 @@
 const startBtn = document.querySelector(".startBtn")
-let gameOn = true;
 let petName;
-startBtn.addEventListener("click", startPrompt)
+let gameOn = true;
+startBtn.addEventListener("click", retrieveName)
 
 
+let tamagotchi =  {
+petName, 
+age: 0,
+hunger: 0,
+bordedom: 0,
+sleepiness:0,
+}
+console.log(tamagotchi)
 
-
- function startPrompt(){
-    let input = prompt("What is your pet name?")
-    petName = input
-    console.log(petName)
-    this.style.display = "none";
-    return petName
-       
+function retrieveName(){
+  let input = prompt("What is your pet name?")
+  tamagotchi.petName = input
+  console.log(tamagotchi.petName)
+  this.style.display = "none";
+  
+     
 
 }
