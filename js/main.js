@@ -13,6 +13,13 @@ sleepiness:0,
 }
 console.log(tamagotchi)
 
+let age = document.querySelector("#age")
+age.innerHTML = `Age: ${tamagotchi.age}`
+let hunger = document.querySelector("#hunger")
+hunger.innerHTML = `Hunger: ${tamagotchi.hunger}`
+let boredom = document.querySelector("#boredom")
+boredom.innerHTML = `Bordeom: ${tamagotchi.bordedom}`
+
 function retrieveName(){
   let input = prompt("What is your pet name?")
   tamagotchi.petName = input
