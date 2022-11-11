@@ -3,7 +3,7 @@ step one: an option to start game appears
 step two: after starting prompt for name appears
 step three: character shows up
  --character appears with health bar, Age, sleepiness boredom, hunger by this point--
- all bars should start fat zero
+ all bars should start at zero
 step four: buttons are located to have options of feeding, turn lights off and play
 
 step five: if user presses feed 
