@@ -9,7 +9,7 @@ petName,
 age: 0,
 hunger: 3,
 boredom: 3,
-sleepiness:0,
+sleepiness:3,
 }
 console.log(tamagotchi)
 
@@ -26,6 +26,8 @@ sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
 let feed = document.querySelector('#feed')
 let play = document.querySelector('#play')
 let sleep = document.querySelector('#sleep')
+
+let body = document.querySelector('body')
 
 function retrieveName(){
   let input = prompt("What is your pet name?")
@@ -44,6 +46,12 @@ function retrieveName(){
     else if(btn ==="play" && tamagotchi.boredom <10 && tamagotchi.boredom >0){
       tamagotchi.boredom = tamagotchi.boredom -1
       boredom.innerHTML = `Boredom: ${tamagotchi.boredom}`
+    }
+    else if(btn ==="sleep" && tamagotchi.sleepiness <10 && tamagotchi.sleepiness >0){
+      tamagotchi.sleepiness = tamagotchi.sleepiness -1
+      sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
+      //body.style.backgroundColor = 'black'
+      
     }
   
   }
