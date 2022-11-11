@@ -50,8 +50,16 @@ function retrieveName(){
     else if(btn ==="sleep" && tamagotchi.sleepiness <10 && tamagotchi.sleepiness >0){
       tamagotchi.sleepiness = tamagotchi.sleepiness -1
       sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
-      //body.style.backgroundColor = 'black'
+      setTimeout(setBlack, 50)
+      setTimeout(setWhite, 1000)
       
     }
   
   }
+
+  function setBlack(){
+    body.style.backgroundColor = 'black'
+  }
+function setWhite(){
+  body.style.backgroundColor ="white"
+}
