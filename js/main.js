@@ -4,8 +4,8 @@ let gameOn = true;
 startBtn.addEventListener("click", retrieveName)
 
 
-let tamagotchi =  {
-petName, 
+let tamagotchi =  { 
+petName,
 age: 0,
 hunger: 3,
 boredom: 3,
@@ -63,3 +63,36 @@ function retrieveName(){
 function setWhite(){
   body.style.backgroundColor ="white"
 }
+
+
+setInterval(addToStat, 5000)
+addToStat()
+function addToStat(){
+  
+  //let stats = [tamagotchi.hunger, tamagotchi.age, tamagotchi.boredom, tamagotchi.sleepiness]
+  //for( i=0; i < stats.length; i ++){
+  //  console.log("index " + i)
+  //  console.log("stat value " + stats[i])
+  //  stats[i] += 1
+   // console.log("updated stat value " + stats[i])
+  //updateTama()
+
+  //}
+  tamagotchi.hunger+= 1
+  hunger.innerHTML = `Hunger: ${tamagotchi.hunger}`
+
+  tamagotchi.age +=1
+  age.innerHTML = `Age: ${tamagotchi.age}`
+
+  tamagotchi.boredom += 1
+  boredom.innerHTML = `Boredom: ${tamagotchi.boredom}`
+
+  tamagotchi.sleepiness +=1
+  sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
+
+  
+}
+
+
+
+
