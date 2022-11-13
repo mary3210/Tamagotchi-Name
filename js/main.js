@@ -64,9 +64,11 @@ function setWhite(){
   body.style.backgroundColor ="white"
 }
 
+function time(){
 
-setInterval(addToStat, 5000)
-addToStat()
+let gameInterval = setInterval(addToStat, 5000)
+
+
 function addToStat(){
   
   //let stats = [tamagotchi.hunger, tamagotchi.age, tamagotchi.boredom, tamagotchi.sleepiness]
@@ -90,9 +92,13 @@ function addToStat(){
   tamagotchi.sleepiness +=1
   sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
 
-  
+
+  if(tamagotchi.boredom == 10 || tamagotchi.hunger == 10 ||  tamagotchi.sleepiness == 10){
+    clearInterval(gameInterval)
+    console.log("You lost!")
+  }
 }
-
-
+}
+time()
 
 
