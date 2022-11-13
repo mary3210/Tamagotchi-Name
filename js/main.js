@@ -11,7 +11,7 @@ hunger: 3,
 boredom: 3,
 sleepiness:3,
 }
-console.log(tamagotchi)
+
 
 let age = document.querySelector("#age")
 age.innerHTML = `Age: ${tamagotchi.age}`
