@@ -13,6 +13,7 @@ sleepiness:3,
 }
 
 
+
 let age = document.querySelector("#age")
 age.innerHTML = `Age: ${tamagotchi.age}`
 let hunger = document.querySelector("#hunger")
@@ -34,6 +35,8 @@ function retrieveName(){
   tamagotchi.petName = input
   console.log(tamagotchi.petName)
   this.style.display = "none";
+  let nameOfPet = document.querySelector('#nameOfPet')
+  nameOfPet.innerHTML = tamagotchi.petName
 }
 
   function decreaseStat(btn){
