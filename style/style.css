@@ -1,8 +1,9 @@
 .stats {
-    display: flex;
+  display: flex;
   justify-content: space-around;
   font-family: 'Press Start 2P', cursive;
   color:#9ADBB3;
+ 
   
 }
 
@@ -10,9 +11,11 @@
     display: flex;
     justify-content: space-around;
   
-  cursor: pointer;
-  margin-top: 5px;
-  margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
   
 }
 
@@ -46,9 +49,15 @@
     color: deeppink;
     
 }
+#nameOfPet {
+    font-family: 'Press Start 2P', cursive;
+    color: #F8C8DC;
+    margin-left: 20px;
+
+}
 
 .startBtn {
-   
+    
     height: 50px;
     width: 50px;
     margin-left: auto;

@@ -7,9 +7,9 @@ startBtn.addEventListener("click", retrieveName)
 let tamagotchi =  { 
 petName,
 age: 0,
-hunger: 3,
-boredom: 3,
-sleepiness:3,
+hunger: 0,
+boredom: 0,
+sleepiness:0,
 }
 
 
