@@ -3,20 +3,15 @@
   justify-content: space-around;
   font-family: 'Press Start 2P', cursive;
   color:#9ADBB3;
- 
-  
 }
 
 .decreaseBtns {
     display: flex;
     justify-content: space-around;
-  
     cursor: pointer;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
- 
-  
 }
 
 #feed {
@@ -69,9 +64,7 @@
     font-size: 12px;
     background-color: #F8C8DC;
     color: deeppink;
-    
-    
-
+       
 }
 
 img {
@@ -81,8 +74,6 @@ img {
     margin-top: 15px;
     height: 450px;
     width: 300px;
-    
-    
 }
 
 body {
