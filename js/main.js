@@ -95,13 +95,27 @@ function addToStat(){
   tamagotchi.sleepiness +=1
   sleepiness.innerHTML = `Tired: ${tamagotchi.sleepiness}`
 
-
+changeImg()
   if(tamagotchi.boredom == 10 || tamagotchi.hunger == 10 ||  tamagotchi.sleepiness == 10){
     clearInterval(gameInterval)
     console.log("You lost!")
   }
 }
 }
+
+function changeImg(){
+  img = document.querySelector(".tama-char")
+  console.log(img)
+  if (tamagotchi.age == 5){
+    img.setAttribute("src", "https://www.kindpng.com/picc/m/56-566340_cute-potato-png-kawaii-potato-transparent-png.png")
+
+  }
+
+}
+
+
+
+
 time()
 
 
